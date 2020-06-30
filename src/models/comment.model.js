@@ -14,4 +14,4 @@ const CommentSchema = new Schema({
 
 CommentSchema.plugin(require("mongoose-autopopulate"));
 
-model.exports = mongoose.model('comment', CommentSchema);
+module.exports = mongoose.model('comment', CommentSchema);
