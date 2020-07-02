@@ -1,7 +1,8 @@
 const BaseService = require('./base.service');
+let _ideaRepository;
 
 class IdeaService extends BaseService{
-    constructor({IdeaRepository}){
+    constructor({ IdeaRepository }){
         super(IdeaRepository);
         _ideaRepository = IdeaRepository;
     }
