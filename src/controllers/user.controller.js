@@ -18,7 +18,7 @@ class UserController{
 
     async update(req, res){
         const { body } = req;
-        const { userId } =req.params;
+        const { userId } = req.params;
         const updateUser = await _userService.update(userId, body);
         return res.send(updateUser);
     }
